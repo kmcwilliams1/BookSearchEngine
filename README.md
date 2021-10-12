@@ -88,15 +88,15 @@ In order for this application to use a GraphQL API, you’ll need to refactor th
 
 You’ll need to complete the following tasks in each of these back-end files:
 
-* `server.js`: Implement the Apollo Server and apply it to the Express server as middleware.
+* `server.js`: Implement the Apollo Server and apply it to the Express server as middleware. ok!
 
-* `auth.js`: Update the auth middleware function to work with the GraphQL API.
+* `auth.js`: Update the auth middleware function to work with the GraphQL API. ok!
 
 	**Hint**: Refer to the class activities as a refresher on how to do this.
 
 * `Schemas` directory:
 
-	* `index.js`: Export your typeDefs and resolvers.
+	* `index.js`: Export your typeDefs and resolvers. ok!
 
 	* `resolvers.js`: Define the query and mutation functionality to work with the Mongoose models.
 
@@ -106,7 +106,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 		* `Query` type:
 
-			* `me`: Which returns a `User` type.
+			* `me`: Which returns a `User` type. ok!
 		
 		* `Mutation` type:
 
@@ -116,7 +116,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 			* `saveBook`: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a `User` type. (Look into creating what's known as an `input` type to handle all of these parameters!)
 
-			* `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type.
+			* `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type. ok!
 			
 		* `User` type:
 
@@ -128,7 +128,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 			* `bookCount`
 
-			* `savedBooks` (This will be an array of the `Book` type.)
+			* `savedBooks` (This will be an array of the `Book` type.) ok!
 
 		* `Book` type:
 
@@ -149,7 +149,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 			* `token`
 
 			* `user` (References the `User` type.)
-
+OK!
 
 ### Front-End Specifications
 
@@ -183,7 +183,7 @@ Additionally, you’ll need to complete the following tasks in each of these fro
 
 	* Instead, use the `useQuery()` Hook to execute the `GET_ME` query on load and save it to a variable named `userData`.
 
-	* Use the `useMutation()` Hook to execute the `REMOVE_BOOK` mutation in the `handleDeleteBook()` function instead of the `deleteBook()` function that's imported from `API` file. (Make sure you keep the `removeBookId()` function in place!)
+	* Use the `useMutation()` Hook to execute the `REMOVE_BOOK` mutation in the `handleremoveBook()` function instead of the `removeBook()` function that's imported from `API` file. (Make sure you keep the `removeBookId()` function in place!)
 
 * `SignupForm.js`: Replace the `addUser()` functionality imported from the `API` file with the `ADD_USER` mutation functionality.
 
